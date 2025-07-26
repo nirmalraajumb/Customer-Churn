@@ -1,8 +1,9 @@
-
 import gradio as gr
 import joblib
 import numpy as np
+import mlflow
 
+mlflow.set_tracking_uri("https://dagshub.com/<nirmalraajumb>/<Customer-Churn>.mlflow")
 # Load the saved model
 model = joblib.load("random_forest_model.joblib")
 
